@@ -1,10 +1,10 @@
 from django import setup as django_setup
+from django.core.handlers.asgi import ASGIHandler
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from app.core.api import router
-from django.core.handlers.asgi import ASGIHandler
 
 
 def get_asgi_application():
